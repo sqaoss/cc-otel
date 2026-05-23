@@ -5,7 +5,7 @@ name: cc-otel
 # shell, no wget/curl. A shell-based Docker HEALTHCHECK would fail forever, and
 # gating the collector on `depends_on: condition: service_healthy` would then
 # deadlock startup. So we use plain `depends_on` ordering only and let the
-# collector's otlphttp exporter `retry_on_failure` (enabled by default) tolerate
+# collector's otlp_http exporter `retry_on_failure` (enabled by default) tolerate
 # VM/VL warming up. Do not add shell healthchecks to VM/VL.
 
 services:
