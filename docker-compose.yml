@@ -26,7 +26,7 @@ services:
       - victorialogs
 
   victoriametrics:
-    image: victoriametrics/victoria-metrics:v1.136.9
+    image: victoriametrics/victoria-metrics:v1.143.0
     container_name: cc-otel-victoriametrics
     restart: unless-stopped
     command:
